@@ -15,7 +15,8 @@ function scrollFunction() {
 $(window).on('load', function () {
     $(window).scrollTop(0);
     setTimeout(() => {
-        $('#preloader').fadeOut('slow');
+        // $('#preloader').fadeOut('slow');
+        $('#preloader').slideUp();
     }, 1000)
 });
 
