@@ -201,3 +201,17 @@ html {
     padding-top: 60px !important;
     padding-bottom: 40px !important;
 }
+
+@media only screen and (max-width: 600px) {
+    .header-text {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #343434;
+    }
+
+    .header-sub-text {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #343434;
+    }
+}
