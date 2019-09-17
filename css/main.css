@@ -149,6 +149,7 @@ html {
 .content {
     position: absolute;
     z-index: 2;
+    margin-top: 100px;
 }
 
 .page-header {
@@ -202,6 +203,8 @@ html {
     padding-bottom: 40px !important;
 }
 
+/* Media Query */
+
 @media only screen and (max-width: 600px) {
     .header-text {
         font-size: 3rem;
@@ -214,4 +217,43 @@ html {
         font-weight: 400;
         color: #343434;
     }
+}
+
+/* FOOTER */
+
+.page-footer {
+    border-top: 0.08rem solid #dbdbdb;
+}
+
+.footer-1 {
+    height: 65px;
+}
+
+.footer-container {
+    width: 90% !important;
+}
+
+.facebook-icon {
+    color: #3B5998;
+}
+
+.linkedin-icon {
+    color: #4875B4;
+}
+
+.twitter-icon {
+    color: #33CCFF;
+}
+
+.instagram-icon {
+    color: #4E433C;
+}
+.footer-logo-text {
+    vertical-align: top;
+    color: #555 !important;
+    font-weight: 600;
+    font-size: 2.00rem;
+    line-height: 2.1;
+    margin-left: 5px;
+    transition: font-size 0.5s;
 }
