@@ -11,24 +11,52 @@
         perspective: 1000px;
     }
 
+    .tilter-lead {
+        width: 40vw !important;
+        height: 60vw !important;
+    }
+
+    .tilter-team {
+        width: 22vw;
+        height: 27vw;
+    }
+
     .tilter__title {
-        font-size: 1rem !important;
+        position: absolute;
+        font-size: 1.3em !important;
+        font-weight: normal;
+        line-height: 1;;
+        bottom: 0;
+        margin-bottom: 30%;
+        left: 10%;
+    }
+
+    .tilter__description {
+        position: absolute;
+        font-size: 0.85em;
+        margin: 1em 0 0 0;
+        letter-spacing: 0.05em !important;
+        bottom: 15%;
+        left: 10%;
     }
 }
 
 /* Tilter CSS */
 
 .tilter-team {
-    width: 22vw !important;
-    height: 27vw !important;
+    width: 22vw;
+    height: 27vw;
+}
+
+.tilter-lead {
+    width: 25vw;
+    height: 30vw;
 }
 
 .tilter {
     position: relative;
     display: block;
     flex: none;
-    width: 25vw;
-    height: 30vw;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     color: #fff;
@@ -109,7 +137,6 @@
 
 .tilter__title {
     position: absolute;
-    font-family: 'Abril Fatface', serif;
     font-size: 2.0em;
     font-weight: normal;
     line-height: 1;;
@@ -122,7 +149,7 @@
     position: absolute;
     font-size: 0.85em;
     margin: 1em 0 0 0;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.05em;
     bottom: 15%;
     left: 10%;
 }
