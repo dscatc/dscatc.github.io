@@ -5,8 +5,8 @@
         flex: none;
         width: 40vw !important;
         height: 60vw !important;
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
+        margin-top: 0.5em !important;
+        margin-bottom: 0.5em !important;
         color: #fff;
         perspective: 1000px;
     }
@@ -27,17 +27,14 @@
         font-weight: normal;
         line-height: 1;;
         bottom: 0;
-        margin-bottom: 30%;
+        margin-bottom: 30% !important;
         left: 10%;
     }
 
     .tilter__description {
-        position: absolute;
-        font-size: 0.85em;
+        font-size: 0.65em !important;
         margin: 1em 0 0 0;
         letter-spacing: 0.05em !important;
-        bottom: 15%;
-        left: 10%;
     }
 }
 
@@ -137,21 +134,18 @@
 
 .tilter__title {
     position: absolute;
-    font-size: 2.0em;
+    font-size: 1.8em;
     font-weight: normal;
     line-height: 1;;
     bottom: 0;
-    margin-bottom: 30%;
+    margin-bottom: 20%;
     left: 10%;
 }
 
 .tilter__description {
-    position: absolute;
-    font-size: 0.85em;
+    font-size: 0.55em;
     margin: 1em 0 0 0;
     letter-spacing: 0.05em;
-    bottom: 15%;
-    left: 10%;
 }
 
 .tilter__deco_lines {
