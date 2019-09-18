@@ -22,7 +22,7 @@ $(window).on('load', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const elems = document.querySelectorAll('.sidenav');
-    const instances = M.Sidenav.init(elems, options);
+    const instances = M.Sidenav.init(elems, {});
 });
 
 // Or with jQuery
