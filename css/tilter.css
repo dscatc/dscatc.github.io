@@ -36,6 +36,10 @@
         margin: 1em 0 0 0;
         letter-spacing: 0.05em !important;
     }
+
+    .community-lead {
+        left: 28% !important;
+    }
 }
 
 /* Tilter CSS */
@@ -155,4 +159,11 @@
     top: 5%;
     left: 5%;
     position: absolute;
+}
+
+.profile-social-links {
+    margin-top: 20px;
+}
+.community-lead {
+    left: 10%;
 }
