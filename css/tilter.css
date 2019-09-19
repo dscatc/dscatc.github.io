@@ -14,11 +14,13 @@
     .tilter-lead {
         width: 40vw !important;
         height: 60vw !important;
+        left: 0 !important;
     }
 
     .tilter-team {
         width: 22vw;
         height: 27vw;
+        left: 0 !important;
     }
 
     .tilter__title {
@@ -45,13 +47,15 @@
 /* Tilter CSS */
 
 .tilter-team {
-    width: 22vw;
-    height: 27vw;
+    width: 15vw;
+    height: 20vw;
+    left: 17%;
 }
 
 .tilter-lead {
-    width: 25vw;
-    height: 30vw;
+    width: 15vw;
+    height: 20vw;
+    left: 17%;
 }
 
 .tilter {
@@ -163,7 +167,8 @@
 
 .profile-social-links {
     margin-top: 20px;
+    position: relative;
 }
 .community-lead {
-    left: 10%;
+    left: 25%;
 }

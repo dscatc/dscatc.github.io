@@ -1,12 +1,17 @@
 <html>
 <head>
+	<meta charset="utf-8"/>
 	<title>Developer Student Club ATC - powered by Google Developers</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="js/main.js" type="text/javascript"></script>
 
 	<link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16">
@@ -14,23 +19,23 @@
 </head>
 <body>
 <div class="bouncing-loader" id="preloader">
-	<div></div>
-	<div></div>
-	<div></div>
-	<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
 </div>
 
 <div class="navbar-fixed">
 	<nav class="main-nav no-shadows" id="main-nav">
 		<div class="nav-wrapper">
-			<a href="" class="black-text">
+			<a href="/" class="black-text">
 				<img class="nav-logo" src="img/logo.png"/>
 				<span class="nav-text">DSC ATC</span>
 			</a>
 			<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
 			<ul class="right hide-on-med-and-down">
 				<li><a href="#about" class="black-text">About Us</a></li>
-				<li><a href="events.html" class="black-text">Events</a></li>
+				<li><a href="#events" class="black-text">Events</a></li>
 				<li><a href="team.html" class="black-text">Our Team</a></li>
 				<li><a href="#contact" class="black-text">Contact</a></li>
 			</ul>
@@ -40,7 +45,7 @@
 
 <ul class="sidenav" id="mobile-demo">
 	<li><a href="#about">About Us</a></li>
-	<li><a href="events.html">Events</a></li>
+	<li><a href="#events">Events</a></li>
 	<li><a href="team.html">Our Team</a></li>
 	<li><a href="#contact">Contact</a></li>
 </ul>
@@ -67,31 +72,118 @@
 		</div>
 	</div>
 </div>
+<div class="scroll-down">
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_2" x="0px" y="0px" viewBox="0 0 25.166666 37.8704414" enable-background="new 0 0 25.166666 37.8704414" xml:space="preserve">
+        <path class="stroke" fill="none" stroke="#c7c4b8" stroke-width="2.5" stroke-miterlimit="10" d="M12.5833445 36.6204414h-0.0000229C6.3499947 36.6204414 1.25 31.5204487 1.25 25.2871208V12.5833216C1.25 6.3499947 6.3499951 1.25 12.5833216 1.25h0.0000229c6.2333269 0 11.3333216 5.0999947 11.3333216 11.3333216v12.7037992C23.916666 31.5204487 18.8166714 36.6204414 12.5833445 36.6204414z"></path>
+        <path class="scroller" fill="#c7c4b8" d="M13.0833359 19.2157116h-0.9192753c-1.0999985 0-1.9999971-0.8999996-1.9999971-1.9999981v-5.428606c0-1.0999994 0.8999987-1.9999981 1.9999971-1.9999981h0.9192753c1.0999985 0 1.9999981 0.8999987 1.9999981 1.9999981v5.428606C15.083334 18.315712 14.1833344 19.2157116 13.0833359 19.2157116z"></path>
+    </svg>
+	<i class="icon icon-arrow-down"></i>
+</div>
+<div class="row about-content" id="about">
+	<div class="col s12 m4 l4 hide-on-small-only">
+		<img src="img/diversity.png" style="height: 50%;"/>
+	</div>
+	<div class="col s12 m7 l7">
+		<div class="card-panel white black-text">
+			<!--<div class="card-panel about-section-header">-->
+				<!--<span class="white-text">About Us</span>-->
+			<!--</div>-->
+			<span class="">
+				<p><h5>About Us</h5></p>
+				<p>Developer Student Clubs (DSC) are community groups for students from any academic background
+			in their undergraduate or graduate term.</p>
+				<p>By joining a DSC, students build their professional and personal network,
+			get access to Google developer resources, and work together to build solutions for local problems in a peer-to-peer learning environment.</p></span>
+		</div>
+	</div>
+</div>
 
-<div class="content">
-	<div class="row" id="about">
-		<div class="col s12 l7 push-l4">
-			<div class="card-panel white black-text about-section-content">
-				<div class="card-panel about-section-header">
-					<span class="white-text">About Us</span>
-				</div>
-				<span class="">Developer Student Clubs (DSC) are community groups for students from any academic background
-			in their undergraduate or graduate term. By joining a DSC, students build their professional and personal network,
-			get access to Google developer resources, and work together to build solutions for local problems in a peer-to-peer
-			learning environment.</span>
+<div class="row green white-text what-section">
+	<div class="col s12 m10 l10 offset-l1 offset-m1">
+		<h2>What do we do ?</h2>
+		<p class="flow-text">Developer Student Clubs provides an environment to all the developers out there
+		to connect and participate in multiple events like Hackathons, Sessions, Coding Jam and more. Together
+		we try to work on multiple technical domains and solve issues around the world.</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col s12 m3 l3 offset-l1 offset-m1">
+		<div class="card red darken-1">
+			<div class="card-content white-text">
+				<span class="card-title">Domains</span>
 			</div>
 		</div>
 	</div>
+</div>
+<div class="spacer s0 middle" id="trigger1"></div>
+<div class="test-box" id="pin1">
+	<svg viewBox="0 0 1280 720" id="pin1" style="height: 95vh; width: 100vw;">
+
+		<defs>
+
+			<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+				<stop offset="90%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+				<stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1"/>
+			</linearGradient>
+
+
+			<mask id="reveal" height="400%" width="400%" x="-100%" y="-100%">
+				<rect id="mask" width="110%" height="100%" x="0%" y="0%" fill="url(#gradient)"></rect>
+			</mask>
+
+		</defs>
+
+		<image width="1280" height="720" xlink:href="img/machine.png"/>
+		<image id="back-img-2" width="1280" height="720" xlink:href="img/backend.png"/>
+		<image id="back-img-1" width="1280" height="720" xlink:href="img/frontend.png"/>
+
+		<image width="1280" height="720" mask="url(#reveal)" xlink:href="img/cloud.png"/>
+		<image id="front-img-2" width="1280" height="720" mask="url(#reveal)" xlink:href="img/android.png"/>
+		<image id="front-img-1" width="1280" height="720" mask="url(#reveal)" xlink:href="img/design.png"/>
+
+
+	</svg>
+</div>
+
+<div class="spacer s2"></div>
+<div class="spacer s2"></div>
+<div class="spacer s2"></div>
+<div class="spacer s2"></div>
+<div class="slider" id="events">
+	<ul class="slides">
+		<li>
+			<img src="img/github-event.jpg"> <!-- random image -->
+			<div class="caption center-align">
+				<h3>Github Event</h3>
+				<h5 class="light grey-text text-lighten-3"></h5>
+			</div>
+		</li>
+		<li>
+			<img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+			<div class="caption left-align">
+				<h3>Coming Soon</h3>
+				<h5 class="light grey-text text-lighten-3"></h5>
+			</div>
+		</li>
+	</ul>
+</div>
+
+<div class="spacer s2"></div>
+<div class="">
 	<footer class="page-footer white black-text">
 		<div class="container footer-container">
 			<div class="row">
 				<div class="col l4 s12">
 					<img src="img/logo.png" class="footer-1"/><span class="footer-logo-text">DSC ATC</span><br>
 					<div class="social-icons">
-						<a href=""><i class="fa fa-facebook-square fa-2x facebook-icon"></i></a>
-						<a href=""><i class="fa fa-linkedin-square fa-2x linkedin-icon"></i></a>
-						<a href=""><i class="fa fa-instagram fa-2x instagram-icon"></i></a>
-						<a href=""><i class="fa fa-twitter-square fa-2x twitter-icon"></i></a>
+						<a href="https://www.facebook.com/dscatc11" target="_blank"><i
+								class="fa fa-facebook-square fa-2x facebook-icon"></i></a>
+						<a href="https://www.linkedin.com/company/dscatc" target="_blank"><i class="fa fa-linkedin-square fa-2x linkedin-icon"></i></a>
+						<a href="https://instagram.com/dscatc" target="_blank"><i
+								class="fa fa-instagram fa-2x instagram-icon"></i></a>
+						<a href="https://twitter.com/dscatc" target="_blank"><i
+								class="fa fa-twitter-square fa-2x twitter-icon"></i></a>
 					</div>
 					<p>
 						Acropolis Technical Campus<br>
@@ -99,7 +191,7 @@
 						India
 					</p>
 				</div>
-				<div class="col l4 s12">
+				<div class="col l3 s12">
 					<h5 class="">About</h5>
 					<ul>
 						<li><a class="text-lighten-3" href="http://acropolistechnicalcampus.com/" target="_blank">Acropolis
@@ -110,13 +202,17 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col l4 s12">
+				<div class="col l3 s12">
 					<h5 class="">Resources</h5>
 					<ul>
 						<li><a class="text-lighten-3" href="http://github.com/dscatc/">Github</a></li>
 						<li><a class="text-lighten-3" href="#!">Call for a Speaker</a></li>
 						<li><a class="text-lighten-3" href="#!">Become a Sponsor</a></li>
 					</ul>
+				</div>
+				<div class="col l2 s12" id="contact">
+					<h5 class="">Contact Us</h5>
+					<p>dscatc@gmail.com</p>
 				</div>
 			</div>
 		</div>
